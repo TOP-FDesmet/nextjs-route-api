@@ -9,3 +9,16 @@ export async function GET(
   );
   return Response.json(article);
 }
+
+export async function PATCH(
+  request: Request,
+  { params }: { params: { id: string } }
+) {
+  const body = await request.json();
+  const title = body.title;
+  const index = articles.findIndex(
+    (article) => article.id === parseInt(params.id)
+  );
+  articles[index].title = title;
+  return Response.json(articles[index]);
+}
