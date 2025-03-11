@@ -1,0 +1,14 @@
+export const articles = [
+  {
+    id: 1,
+    title: "Lorem Ipsum 1",
+  },
+  {
+    id: 2,
+    title: "Lorem Ipsum 2",
+  },
+  {
+    id: 3,
+    title: "Lorem Ipsum 3",
+  },
+];
